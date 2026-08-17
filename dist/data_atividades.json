@@ -1,0 +1,36 @@
+{
+  "geradoEm": "2026-08-17T17:01:09",
+  "statusOptions": [
+    "Continuidade da Semana Anterior",
+    "A Fazer",
+    "Em Andamento",
+    "Concluído",
+    "Pendente"
+  ],
+  "setorOptions": [
+    "Felipe",
+    "José Arthur"
+  ],
+  "atividades": [
+    {
+      "id": "3bfc5ab5-32d3-8096-b820-c0e491c14601",
+      "nome": "teste 1",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "",
+      "status": "A Fazer",
+      "semana": "2026-08-17",
+      "obs": ""
+    },
+    {
+      "id": "3bfc5ab5-32d3-80fe-beb7-f4b99856c5b8",
+      "nome": "",
+      "setor": "Felipe",
+      "responsavel": "Felipe",
+      "prioridade": "",
+      "status": "A Fazer",
+      "semana": "2026-08-17",
+      "obs": ""
+    }
+  ]
+}
