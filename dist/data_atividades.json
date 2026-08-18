@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-08-18T16:30:12",
+  "geradoEm": "2026-08-18T17:16:38",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -11,5 +11,116 @@
     "Felipe",
     "José Arthur"
   ],
-  "atividades": []
+  "atividades": [
+    {
+      "id": "3c0c5ab5-32d3-8100-acb9-ee45f0ff1f71",
+      "nome": "Passar as proximas correções de GYN para o Arthur",
+      "setor": "Felipe",
+      "responsavel": "Felipe",
+      "prioridade": "Baixa",
+      "status": "A Fazer",
+      "semana": "2026-08-17",
+      "obs": ""
+    },
+    {
+      "id": "3c0c5ab5-32d3-81ab-9713-fbd500f4de6d",
+      "nome": "Finalizar os projetos em aberto",
+      "setor": "Felipe",
+      "responsavel": "Felipe",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-08-17",
+      "obs": ""
+    },
+    {
+      "id": "3c0c5ab5-32d3-81c0-93fb-d91c80dbaf99",
+      "nome": "TB 19 QD 51 LT 03 - PROJETO",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Baixa",
+      "status": "A Fazer",
+      "semana": "2026-08-17",
+      "obs": ""
+    },
+    {
+      "id": "3c0c5ab5-32d3-817b-a8b1-d316c32ae502",
+      "nome": "TB 19 QD 51 LT 03 - PROJETO",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Baixa",
+      "status": "A Fazer",
+      "semana": "2026-08-17",
+      "obs": ""
+    },
+    {
+      "id": "3c0c5ab5-32d3-81d2-be45-fe5b7a6a283d",
+      "nome": "RR 03 QD 03 LT 05 - PROJETO",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Baixa",
+      "status": "A Fazer",
+      "semana": "2026-08-17",
+      "obs": ""
+    },
+    {
+      "id": "3c0c5ab5-32d3-8153-8075-f71549aa7933",
+      "nome": "52 QD 81 lt 10",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Baixa",
+      "status": "A Fazer",
+      "semana": "2026-08-17",
+      "obs": ""
+    },
+    {
+      "id": "3c0c5ab5-32d3-8169-8285-f6129d0dba07",
+      "nome": "Conferir atividades do Notion (em aberto)",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-08-17",
+      "obs": ""
+    },
+    {
+      "id": "3c0c5ab5-32d3-816c-85ba-d3dfcf8d8098",
+      "nome": "ORGANIZAÇÃO DOS PROJETOS",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Alta",
+      "status": "A Fazer",
+      "semana": "2026-08-17",
+      "obs": ""
+    },
+    {
+      "id": "3c0c5ab5-32d3-8195-b33a-df1f2ba17c99",
+      "nome": "TB 21 QD 51 LT 40",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Alta",
+      "status": "A Fazer",
+      "semana": "2026-08-17",
+      "obs": ""
+    },
+    {
+      "id": "3c0c5ab5-32d3-81d3-a763-d342078ed747",
+      "nome": "52 qd 81 lt 09",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Alta",
+      "status": "Em Andamento",
+      "semana": "2026-08-17",
+      "obs": ""
+    },
+    {
+      "id": "3c0c5ab5-32d3-81bc-881a-d1376433a6d0",
+      "nome": "Grupos Hidrossanitarios",
+      "setor": "Felipe",
+      "responsavel": "Felipe",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-08-17",
+      "obs": ""
+    }
+  ]
 }
