@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-08-21T15:32:17",
+  "geradoEm": "2026-08-21T16:08:11",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -88,7 +88,7 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Alta",
-      "status": "A Fazer",
+      "status": "Concluído",
       "semana": "2026-08-17",
       "obs": "Verificar documentações pendentes"
     },
