@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-08-24T01:14:39",
+  "geradoEm": "2026-08-24T02:59:26",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -18,8 +18,8 @@
       "setor": "Felipe",
       "responsavel": "Felipe",
       "prioridade": "Baixa",
-      "status": "A Fazer",
-      "semana": "2026-08-17",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-08-24",
       "obs": ""
     },
     {
@@ -28,8 +28,8 @@
       "setor": "Felipe",
       "responsavel": "Felipe",
       "prioridade": "Média",
-      "status": "A Fazer",
-      "semana": "2026-08-17",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-08-24",
       "obs": ""
     },
     {
@@ -48,8 +48,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Baixa",
-      "status": "Em Andamento",
-      "semana": "2026-08-17",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-08-24",
       "obs": ""
     },
     {
@@ -58,8 +58,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Baixa",
-      "status": "A Fazer",
-      "semana": "2026-08-17",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-08-24",
       "obs": ""
     },
     {
@@ -68,8 +68,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Baixa",
-      "status": "A Fazer",
-      "semana": "2026-08-17",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-08-24",
       "obs": ""
     },
     {
@@ -78,8 +78,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Média",
-      "status": "A Fazer",
-      "semana": "2026-08-17",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-08-24",
       "obs": ""
     },
     {
@@ -118,8 +118,8 @@
       "setor": "Felipe",
       "responsavel": "Felipe",
       "prioridade": "Média",
-      "status": "Em Andamento",
-      "semana": "2026-08-17",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-08-24",
       "obs": ""
     }
   ]
