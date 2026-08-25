@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-08-25T17:31:00",
+  "geradoEm": "2026-08-25T18:27:34",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -38,7 +38,7 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Média",
-      "status": "A Fazer",
+      "status": "Concluído",
       "semana": "2026-08-24",
       "obs": "Verificar se esta pronto e dar baixa no Notion"
     },
