@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-08-25T16:36:30",
+  "geradoEm": "2026-08-25T16:54:14",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -12,6 +12,36 @@
     "José Arthur"
   ],
   "atividades": [
+    {
+      "id": "3c7c5ab5-32d3-816f-94df-d6351c670765",
+      "nome": "Dar um limpa nos Manuais e SCPO",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-08-24",
+      "obs": ""
+    },
+    {
+      "id": "3c7c5ab5-32d3-8142-8b41-f36d82400c17",
+      "nome": "Pedir para o Felipe passar os novos mapas de setores",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Baixa",
+      "status": "A Fazer",
+      "semana": "2026-08-24",
+      "obs": ""
+    },
+    {
+      "id": "3c7c5ab5-32d3-81b2-bfc3-d1054b405268",
+      "nome": "52 QD 81 LT 11",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-08-24",
+      "obs": "Verificar se esta pronto e dar baixa no Notion"
+    },
     {
       "id": "3c0c5ab5-32d3-8100-acb9-ee45f0ff1f71",
       "nome": "Passar as proximas correções de GYN para o Arthur",
@@ -47,7 +77,7 @@
       "nome": "TB 19 QD 50 LT 34 - PROJETO",
       "setor": "José Arthur",
       "responsavel": "José Arthur",
-      "prioridade": "Baixa",
+      "prioridade": "Alta",
       "status": "Continuidade da Semana Anterior",
       "semana": "2026-08-24",
       "obs": ""
@@ -57,7 +87,7 @@
       "nome": "RR 03 QD 03 LT 05 - PROJETO",
       "setor": "José Arthur",
       "responsavel": "José Arthur",
-      "prioridade": "Baixa",
+      "prioridade": "Alta",
       "status": "Continuidade da Semana Anterior",
       "semana": "2026-08-24",
       "obs": ""
@@ -80,7 +110,7 @@
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
       "semana": "2026-08-24",
-      "obs": ""
+      "obs": "1º DEPOIS DOS PROJETOS"
     },
     {
       "id": "3c0c5ab5-32d3-816c-85ba-d3dfcf8d8098",
