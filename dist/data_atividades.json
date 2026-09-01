@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-09-01T13:08:40",
+  "geradoEm": "2026-09-01T15:41:35",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -13,11 +13,61 @@
   ],
   "atividades": [
     {
+      "id": "3cec5ab5-32d3-816f-bffd-dd1bb8aea2ba",
+      "nome": "AUTOMAÇÕES MANUAIS",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-08-31",
+      "obs": "SEXTA 04/09"
+    },
+    {
+      "id": "3cec5ab5-32d3-81e5-baea-ff43903e21eb",
+      "nome": "TB 19 QD 51 LT 02",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Alta",
+      "status": "A Fazer",
+      "semana": "2026-08-31",
+      "obs": ""
+    },
+    {
+      "id": "3cec5ab5-32d3-818c-8c1a-d77f5167f68e",
+      "nome": "TB 19 QD 50 LT 07",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-08-31",
+      "obs": ""
+    },
+    {
+      "id": "3cec5ab5-32d3-8167-b97c-d2806112882c",
+      "nome": "TB 19 QD 50 LT 09",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-08-31",
+      "obs": ""
+    },
+    {
+      "id": "3cec5ab5-32d3-811f-888c-e8c1181cb874",
+      "nome": "TB 19 QD 50 LT 11",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-08-31",
+      "obs": ""
+    },
+    {
       "id": "3c7c5ab5-32d3-816f-94df-d6351c670765",
       "nome": "Dar um limpa nos Manuais e SCPO",
       "setor": "José Arthur",
       "responsavel": "José Arthur",
-      "prioridade": "Média",
+      "prioridade": "Alta",
       "status": "Continuidade da Semana Anterior",
       "semana": "2026-08-31",
       "obs": ""
@@ -27,7 +77,7 @@
       "nome": "Pedir para o Felipe passar os novos mapas de setores",
       "setor": "José Arthur",
       "responsavel": "José Arthur",
-      "prioridade": "Baixa",
+      "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
       "semana": "2026-08-31",
       "obs": ""
@@ -49,7 +99,7 @@
       "responsavel": "Felipe",
       "prioridade": "Baixa",
       "status": "Concluído",
-      "semana": "2026-08-31",
+      "semana": "2026-08-24",
       "obs": ""
     },
     {
@@ -59,7 +109,7 @@
       "responsavel": "Felipe",
       "prioridade": "Média",
       "status": "Concluído",
-      "semana": "2026-08-31",
+      "semana": "2026-08-24",
       "obs": ""
     },
     {
@@ -98,8 +148,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Baixa",
-      "status": "Continuidade da Semana Anterior",
-      "semana": "2026-08-31",
+      "status": "Concluído",
+      "semana": "2026-08-24",
       "obs": ""
     },
     {
