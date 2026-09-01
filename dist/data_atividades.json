@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-09-01T07:20:19",
+  "geradoEm": "2026-09-01T13:00:52",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -48,7 +48,7 @@
       "setor": "Felipe",
       "responsavel": "Felipe",
       "prioridade": "Baixa",
-      "status": "Continuidade da Semana Anterior",
+      "status": "Concluído",
       "semana": "2026-08-31",
       "obs": ""
     },
@@ -58,7 +58,7 @@
       "setor": "Felipe",
       "responsavel": "Felipe",
       "prioridade": "Média",
-      "status": "Continuidade da Semana Anterior",
+      "status": "Concluído",
       "semana": "2026-08-31",
       "obs": ""
     },
