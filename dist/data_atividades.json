@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-09-04T10:42:05",
+  "geradoEm": "2026-09-04T14:33:33",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -20,7 +20,8 @@
       "prioridade": "Média",
       "status": "A Fazer",
       "semana": "2026-08-31",
-      "obs": "SEXTA 04/09"
+      "obs": "SEXTA 04/09",
+      "origem": ""
     },
     {
       "id": "3cec5ab5-32d3-81e5-baea-ff43903e21eb",
@@ -28,9 +29,10 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Alta",
-      "status": "A Fazer",
+      "status": "Concluído",
       "semana": "2026-08-31",
-      "obs": ""
+      "obs": "",
+      "origem": ""
     },
     {
       "id": "3cec5ab5-32d3-818c-8c1a-d77f5167f68e",
@@ -40,7 +42,8 @@
       "prioridade": "Média",
       "status": "A Fazer",
       "semana": "2026-08-31",
-      "obs": ""
+      "obs": "",
+      "origem": ""
     },
     {
       "id": "3cec5ab5-32d3-8167-b97c-d2806112882c",
@@ -50,7 +53,8 @@
       "prioridade": "Média",
       "status": "A Fazer",
       "semana": "2026-08-31",
-      "obs": ""
+      "obs": "",
+      "origem": ""
     },
     {
       "id": "3cec5ab5-32d3-811f-888c-e8c1181cb874",
@@ -60,7 +64,8 @@
       "prioridade": "Média",
       "status": "A Fazer",
       "semana": "2026-08-31",
-      "obs": ""
+      "obs": "",
+      "origem": ""
     },
     {
       "id": "3c7c5ab5-32d3-816f-94df-d6351c670765",
@@ -70,7 +75,8 @@
       "prioridade": "Alta",
       "status": "Concluído",
       "semana": "2026-08-31",
-      "obs": ""
+      "obs": "",
+      "origem": ""
     },
     {
       "id": "3c7c5ab5-32d3-8142-8b41-f36d82400c17",
@@ -80,7 +86,8 @@
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
       "semana": "2026-08-31",
-      "obs": ""
+      "obs": "",
+      "origem": ""
     },
     {
       "id": "3c7c5ab5-32d3-81b2-bfc3-d1054b405268",
@@ -90,7 +97,8 @@
       "prioridade": "Média",
       "status": "Concluído",
       "semana": "2026-08-24",
-      "obs": "Verificar se esta pronto e dar baixa no Notion"
+      "obs": "Verificar se esta pronto e dar baixa no Notion",
+      "origem": ""
     },
     {
       "id": "3c0c5ab5-32d3-8100-acb9-ee45f0ff1f71",
@@ -100,7 +108,8 @@
       "prioridade": "Baixa",
       "status": "Concluído",
       "semana": "2026-08-24",
-      "obs": ""
+      "obs": "",
+      "origem": ""
     },
     {
       "id": "3c0c5ab5-32d3-81ab-9713-fbd500f4de6d",
@@ -110,7 +119,8 @@
       "prioridade": "Média",
       "status": "Concluído",
       "semana": "2026-08-24",
-      "obs": ""
+      "obs": "",
+      "origem": ""
     },
     {
       "id": "3c0c5ab5-32d3-81c0-93fb-d91c80dbaf99",
@@ -120,7 +130,8 @@
       "prioridade": "Baixa",
       "status": "Concluído",
       "semana": "2026-08-17",
-      "obs": ""
+      "obs": "",
+      "origem": ""
     },
     {
       "id": "3c0c5ab5-32d3-817b-a8b1-d316c32ae502",
@@ -130,7 +141,8 @@
       "prioridade": "Alta",
       "status": "Concluído",
       "semana": "2026-08-24",
-      "obs": ""
+      "obs": "",
+      "origem": ""
     },
     {
       "id": "3c0c5ab5-32d3-81d2-be45-fe5b7a6a283d",
@@ -140,7 +152,8 @@
       "prioridade": "Alta",
       "status": "Concluído",
       "semana": "2026-08-24",
-      "obs": ""
+      "obs": "",
+      "origem": ""
     },
     {
       "id": "3c0c5ab5-32d3-8153-8075-f71549aa7933",
@@ -150,7 +163,8 @@
       "prioridade": "Baixa",
       "status": "Concluído",
       "semana": "2026-08-24",
-      "obs": ""
+      "obs": "",
+      "origem": ""
     },
     {
       "id": "3c0c5ab5-32d3-8169-8285-f6129d0dba07",
@@ -160,7 +174,8 @@
       "prioridade": "Média",
       "status": "Concluído",
       "semana": "2026-08-24",
-      "obs": "1º DEPOIS DOS PROJETOS"
+      "obs": "1º DEPOIS DOS PROJETOS",
+      "origem": ""
     },
     {
       "id": "3c0c5ab5-32d3-816c-85ba-d3dfcf8d8098",
@@ -170,7 +185,8 @@
       "prioridade": "Alta",
       "status": "Concluído",
       "semana": "2026-08-17",
-      "obs": "Verificar documentações pendentes"
+      "obs": "Verificar documentações pendentes",
+      "origem": ""
     },
     {
       "id": "3c0c5ab5-32d3-8195-b33a-df1f2ba17c99",
@@ -180,7 +196,8 @@
       "prioridade": "Alta",
       "status": "Concluído",
       "semana": "2026-08-17",
-      "obs": ""
+      "obs": "",
+      "origem": ""
     },
     {
       "id": "3c0c5ab5-32d3-81d3-a763-d342078ed747",
@@ -190,7 +207,8 @@
       "prioridade": "Alta",
       "status": "Concluído",
       "semana": "2026-08-17",
-      "obs": ""
+      "obs": "",
+      "origem": ""
     },
     {
       "id": "3c0c5ab5-32d3-81bc-881a-d1376433a6d0",
@@ -200,7 +218,8 @@
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
       "semana": "2026-08-31",
-      "obs": ""
+      "obs": "",
+      "origem": ""
     }
   ]
 }
