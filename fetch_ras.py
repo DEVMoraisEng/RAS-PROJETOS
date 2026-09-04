@@ -155,6 +155,11 @@ def build_atividades(curto):
             "status":      g(P, "Status"),
             "semana":      g(P, "Semana"),
             "obs":         g(P, "Observações", "Observacoes"),
+            # ITEM 2 (03/09/2026) — de onde a atividade veio. A coluna Origem é
+            # gravada pelo Code.gs quando a atividade nasce por coparticipação
+            # ou vem replicada de outra RAS. Banco sem a coluna devolve "" e o
+            # site simplesmente não mostra o selo.
+            "origem":      g(P, "Origem"),
         })
     return out
 
