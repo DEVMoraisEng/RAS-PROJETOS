@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-09-07T03:08:49",
+  "geradoEm": "2026-09-07T06:57:56",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -18,8 +18,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Média",
-      "status": "A Fazer",
-      "semana": "2026-08-31",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-09-07",
       "obs": "SEXTA 04/09",
       "origem": ""
     },
@@ -40,8 +40,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Média",
-      "status": "A Fazer",
-      "semana": "2026-08-31",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-09-07",
       "obs": "",
       "origem": ""
     },
@@ -51,8 +51,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Média",
-      "status": "A Fazer",
-      "semana": "2026-08-31",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-09-07",
       "obs": "",
       "origem": ""
     },
@@ -62,8 +62,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Média",
-      "status": "A Fazer",
-      "semana": "2026-08-31",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-09-07",
       "obs": "",
       "origem": ""
     },
@@ -85,7 +85,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-08-31",
+      "semana": "2026-09-07",
       "obs": "",
       "origem": ""
     },
@@ -217,7 +217,7 @@
       "responsavel": "Felipe",
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-08-31",
+      "semana": "2026-09-07",
       "obs": "",
       "origem": ""
     }
