@@ -241,6 +241,9 @@ main.wrap{padding:40px 22px 60px}
       <textarea id="f_obs" placeholder="Contexto adicional"></textarea>
     </div>
     <div class="field">
+      <label class="chk"><input type="checkbox" id="f_soopara"> Não criar também no meu setor — só para quem eu selecionar abaixo</label>
+    </div>
+    <div class="field">
       <label class="chk"><input type="checkbox" id="f_copart" onchange="toggleCopart()"> Coparticipação — criar também para outras pessoas</label>
     </div>
     <div class="field" id="f_copart_wrap" style="display:none">
@@ -723,6 +726,7 @@ function openModal(setor){
   document.getElementById("f_status").value="A Fazer";
   document.getElementById("f_copart").checked=false;
   document.getElementById("f_copart_wrap").style.display="none";
+  document.getElementById("f_soopara").checked = false;
   document.getElementById("f_or").checked = false;
   document.getElementById("f_or_wrap").style.display = "none";
   _destinosOR = [];
@@ -837,7 +841,21 @@ function saveAtividade(){
   const obs        = document.getElementById("f_obs").value.trim();
   const respPrim   = getRespFromModal();
 
-  criarEntrada(nome, addSetor, respPrim, prioridade, status, semana, obs);
+  // ITEM 1 (pedido de 07/09/2026): quem marcou "não criar no meu setor"
+  // precisa ter escolhido pelo menos um destino — senão a atividade não
+  // vai pra lugar nenhum, e é melhor avisar do que salvar do nada.
+  const naoCriarLocal = document.getElementById("f_soopara").checked;
+  const temCopart = document.getElementById("f_copart").checked &&
+                    document.querySelectorAll(".cp-chk:checked").length > 0;
+  const temEnviarOR = document.getElementById("f_or").checked && _destinosOR.length > 0;
+  if(naoCriarLocal && !temCopart && !temEnviarOR){
+    toast("Marque pelo menos um destino (coparticipação ou outra RAS), ou desmarque \"não criar no meu setor\".");
+    return;
+  }
+
+  if(!naoCriarLocal){
+    criarEntrada(nome, addSetor, respPrim, prioridade, status, semana, obs);
+  }
   let criados = 0;
 
   if(document.getElementById("f_copart").checked){
