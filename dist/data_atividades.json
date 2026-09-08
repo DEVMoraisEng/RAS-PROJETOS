@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-09-08T10:40:45",
+  "geradoEm": "2026-09-08T12:44:36",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -12,6 +12,17 @@
     "José Arthur"
   ],
   "atividades": [
+    {
+      "id": "3d5c5ab5-32d3-81fc-abf2-d040fec989de",
+      "nome": "Gerar indicador de VSO",
+      "setor": "Felipe",
+      "responsavel": "Felipe",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-09-07",
+      "obs": "",
+      "origem": ""
+    },
     {
       "id": "3cec5ab5-32d3-816f-bffd-dd1bb8aea2ba",
       "nome": "AUTOMAÇÕES MANUAIS",
