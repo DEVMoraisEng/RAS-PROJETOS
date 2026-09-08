@@ -170,6 +170,20 @@ main.wrap{padding:40px 22px 60px}
 .sheet h3{padding-right:34px}
 /* Selo de origem (item 2): de onde/de quem a atividade veio. */
 .origem-tag{margin-top:5px;font-size:10.5px;font-weight:700;color:var(--petroleo);background:var(--menta);display:inline-block;padding:2px 9px;border-radius:20px;white-space:nowrap}
+
+/* "Enviar para outra RAS" (item de 04/09/2026): escolha livre de RAS+setor,
+   um "carrinho" de destinos que vão sendo adicionados antes de salvar. */
+.or-add{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:8px;align-items:center;margin-bottom:8px}
+.or-add select{min-width:0}
+.or-add .btn{white-space:nowrap}
+.or-lista{display:flex;flex-direction:column;gap:6px}
+.or-chip{display:flex;align-items:center;gap:8px;font-size:12.5px;background:#F4F7F8;border:1px solid var(--line);border-radius:8px;padding:6px 10px}
+.or-chip b{font-weight:700}
+.or-resp{margin-left:auto;color:var(--muted);white-space:nowrap}
+.or-x{border:none;background:none;color:var(--muted);cursor:pointer;font-size:14px;padding:2px 4px;line-height:1}
+.or-x:hover{color:#B3261E}
+.or-vazio{font-size:12px;color:var(--muted)}
+@media (max-width:560px){ .or-add{grid-template-columns:1fr 1fr} .or-add .btn{grid-column:1 / -1} }
 </style>
 </head>
 <body>
@@ -232,6 +246,19 @@ main.wrap{padding:40px 22px 60px}
     <div class="field" id="f_copart_wrap" style="display:none">
       <label>Coparticipantes (marque um ou mais)</label>
       <div class="copart-list" id="f_copart_list"></div>
+    </div>
+    <div class="field">
+      <label class="chk"><input type="checkbox" id="f_or" onchange="toggleOutraRas()"> Enviar também para outra RAS</label>
+    </div>
+    <div class="field" id="f_or_wrap" style="display:none">
+      <label>Escolha a RAS e o setor de destino, depois clique em Adicionar (dá pra repetir para mais de um destino)</label>
+      <div class="or-add">
+        <select id="f_or_ras" onchange="preencherSetorOutraRas()"></select>
+        <select id="f_or_setor" onchange="preencherRespOutraRas()"></select>
+        <select id="f_or_resp"></select>
+        <button type="button" class="btn ghost" onclick="adicionarDestinoOR()">+ Adicionar</button>
+      </div>
+      <div class="or-lista" id="f_or_lista"></div>
     </div>
     <div class="actions">
       <button class="btn ghost" onclick="closeModal()">Cancelar</button>
@@ -317,6 +344,59 @@ const STCOL = {"A Fazer":["var(--afazer)","var(--afazer-t)"],"Em Andamento":["va
                "Continuidade da Semana Anterior":["var(--continua)","var(--continua-t)"]};
 const PRCOL = {"Alta":["var(--alta)","var(--alta-t)"],"Média":["var(--media)","var(--media-t)"],"Baixa":["var(--baixa)","var(--baixa-t)"]};
 const OPEN = ["A Fazer","Em Andamento","Pendente","Continuidade da Semana Anterior"];
+/* ================= REGISTRO DAS RAS (compartilhado entre os 6 sites) =====
+   Alimenta o "Enviar também para outra RAS" do modal de criação: de
+   QUALQUER quadro para QUALQUER RAS/setor — não fica mais restrito a "só os
+   lugares onde a pessoa responsável já está cadastrada" (como era antes só
+   em Líderes, Financeiro e Obras).
+
+   Como ler este bloco:
+     RAS_INFO    -> as seis RAS, com o nome que aparece na tela.
+     QUADROS_RAS -> os quadros (coluna Setor) de cada RAS, para preencher o
+                    segundo <select> do formulário. Nas RAS departamentais
+                    (Financeiro, Projetos, Suprimentos, Pós-Obra, Obras) o
+                    quadro É a pessoa, então "resp" nem precisa ser
+                    preenchido — respDoQuadro() devolve o próprio nome do
+                    quadro. Só a RAS de Líderes tem quadro com responsável
+                    separado (ex.: Diretoria = Júlio ou João Vitor).
+
+   Esta lista é só para a TELA mostrar as opções certas — quem grava de
+   verdade é o Code.gs de cada RAS, lendo o schema real do banco no momento
+   da gravação. Um quadro esquecido aqui não quebra nada, só não aparece
+   como opção; e um nome de responsável errado aqui não impede a gravação,
+   o Code.gs tenta achar a pessoa mesmo assim (idDaPessoa_).
+
+   Ao criar/renomear um quadro no Notion: atualize aqui, nos SEIS sites (é o
+   mesmo trecho em todos, como o resto deste bloco sempre foi). */
+const RAS_INFO = {
+  semanal:    { nome: "RAS Líderes" },
+  financeiro: { nome: "RAS Financeiro" },
+  projetos:   { nome: "RAS Projetos" },
+  compras:    { nome: "RAS Suprimentos" },
+  posobra:    { nome: "RAS Pós-Obra" },
+  obras:      { nome: "RAS Obras" },
+};
+const QUADROS_RAS = {
+  semanal: {
+    setores: ["Diretoria","Comercial","Financeiro","Suprimentos","Pós Obra","Projetos e Desenvolvimento"],
+    resp: { Diretoria:["Júlio","João Vitor"], Comercial:["Hudson"], Financeiro:["Lohany"],
+            Suprimentos:["Paula"], "Pós Obra":["Paula"], "Projetos e Desenvolvimento":["Felipe"] }
+  },
+  financeiro: { setores: ["Júlio Cesar","Ana Paula","Gustavo","Lohany"] },
+  projetos:   { setores: ["Felipe","José Arthur"] },
+  compras:    { setores: ["Wenzel","Paula","Guilherme"] },
+  posobra:    { setores: ["Paula","Caio"] },
+  obras:      { setores: ["Guilherme","Isaac","João Vitor","João Marcos"] },
+};
+/* Responsável(is) possível(is) num quadro de OUTRA RAS. Nas departamentais o
+   quadro É a pessoa (devolve o próprio nome); em Líderes usa o mapa "resp". */
+function respDoQuadro(ras, setor){
+  const q = QUADROS_RAS[ras];
+  if(!q || !setor) return [];
+  if(q.resp && q.resp[setor]) return q.resp[setor];
+  return [setor];
+}
+
 const NOME_DESTA_RAS = "RAS Projetos";
 
 /* ============ ITEM 2 — QUEM CRIOU (pedido de 03/09/2026) =================
@@ -332,7 +412,12 @@ const NOME_DESTA_RAS = "RAS Projetos";
    chamada "Origem". */
 function carimboOrigem(motivo, setorDeOrigem, quemCriou){
   const ras = (typeof RAS_INFO === "object" && RAS_INFO[RAS_ATUAL] && RAS_INFO[RAS_ATUAL].nome) || NOME_DESTA_RAS;
-  return [motivo, ras, setorDeOrigem, quemCriou].filter(Boolean).join(" \u203a ");
+  // Nos sites departamentais o "setor" JA e a pessoa (ex.: Felipe), entao
+  // setorDeOrigem e quemCriou vem iguais — mostrar os dois duplicaria o nome
+  // ("... > Felipe > Felipe"). So entra quemCriou quando ele diz algo a mais.
+  const partes = [motivo, ras, setorDeOrigem];
+  if(quemCriou && quemCriou !== setorDeOrigem) partes.push(quemCriou);
+  return partes.filter(Boolean).join(" \u203a ");
 }
 
 let ATIV=[], addSetor=null;
@@ -638,6 +723,9 @@ function openModal(setor){
   document.getElementById("f_status").value="A Fazer";
   document.getElementById("f_copart").checked=false;
   document.getElementById("f_copart_wrap").style.display="none";
+  document.getElementById("f_or").checked = false;
+  document.getElementById("f_or_wrap").style.display = "none";
+  _destinosOR = [];
   const locked = RESP_LOCK[setor]||[];
   const wrap = document.getElementById("f_resp_wrap");
   if(locked.length>1){
@@ -682,6 +770,57 @@ function fillCopartSetores(){
   }).join("");
 }
 
+
+/* ---------- "Enviar para outra RAS" (04/09/2026) — escolha livre ----------
+   Lista de destinos (RAS+setor+responsável) montada ANTES de salvar. Cada
+   destino vira uma criação separada no banco daquela RAS — o Code.gs de lá
+   é quem conhece o ID do banco. O carimbo de origem (carimboOrigem) mostra
+   de onde/de quem veio, então quem abrir a atividade no Notion sabe. */
+let _destinosOR = [];
+
+function toggleOutraRas(){
+  const on = document.getElementById("f_or").checked;
+  document.getElementById("f_or_wrap").style.display = on ? "" : "none";
+  if(on){ _destinosOR = []; preencherRasOutraRas(); renderDestinosOR(); }
+}
+function preencherRasOutraRas(){
+  const sel = document.getElementById("f_or_ras");
+  const opcoes = Object.keys(RAS_INFO).filter(k=>k!==RAS_ATUAL);
+  sel.innerHTML = opcoes.map(k=>`<option value="${k}">${escapeHtml(RAS_INFO[k].nome)}</option>`).join("");
+  preencherSetorOutraRas();
+}
+function preencherSetorOutraRas(){
+  const ras = document.getElementById("f_or_ras").value;
+  const setores = (QUADROS_RAS[ras]||{}).setores || [];
+  document.getElementById("f_or_setor").innerHTML = setores.map(s=>`<option>${escapeHtml(s)}</option>`).join("");
+  preencherRespOutraRas();
+}
+function preencherRespOutraRas(){
+  const ras   = document.getElementById("f_or_ras").value;
+  const setor = document.getElementById("f_or_setor").value;
+  const resp  = respDoQuadro(ras, setor);
+  document.getElementById("f_or_resp").innerHTML = resp.map(n=>`<option>${escapeHtml(n)}</option>`).join("");
+}
+function adicionarDestinoOR(){
+  const ras   = document.getElementById("f_or_ras").value;
+  const setor = document.getElementById("f_or_setor").value;
+  const resp  = document.getElementById("f_or_resp").value;
+  if(!ras || !setor) return;
+  if(_destinosOR.some(d=>d.ras===ras && d.setor===setor)){ toast("Esse destino já foi adicionado."); return; }
+  _destinosOR.push({ras, setor, resp});
+  renderDestinosOR();
+}
+function removerDestinoOR(i){ _destinosOR.splice(i,1); renderDestinosOR(); }
+function renderDestinosOR(){
+  const el = document.getElementById("f_or_lista");
+  if(!_destinosOR.length){ el.innerHTML = `<div class="or-vazio">Nenhum destino adicionado ainda.</div>`; return; }
+  el.innerHTML = _destinosOR.map((d,i)=>
+    `<div class="or-chip"><b>${escapeHtml((RAS_INFO[d.ras]||{}).nome||d.ras)}</b> &rsaquo; ${escapeHtml(d.setor)}
+      <span class="or-resp">${escapeHtml(d.resp)}</span>
+      <button type="button" class="or-x" onclick="removerDestinoOR(${i})" title="Remover">&#10005;</button></div>`
+  ).join("");
+}
+
 function criarEntrada(nome, setor, resp, prioridade, status, semana, obs, origem){
   const dados = {action:"create", atividade:nome, setor, responsavel:resp, prioridade, status, semana, obs, origem: origem||""};
   ATIV.push({id:"local-"+Date.now()+"-"+Math.random().toString(36).slice(2,6),
@@ -714,11 +853,27 @@ function saveAtividade(){
     });
   }
 
+
+  // --- envio livre para outra RAS (item de 04/09/2026) ---
+  let enviadas = 0;
+  if(_destinosOR.length){
+    const origem = carimboOrigem("Enviada de", addSetor, respPrim);
+    _destinosOR.forEach(d=>{
+      if(WRITE_ENDPOINT){
+        post({action:"create", ras:d.ras, atividade:nome, setor:d.setor,
+              responsavel:d.resp, prioridade, status, semana, obs, origem});
+      }
+      enviadas++;
+    });
+    _destinosOR = [];
+  }
+
   closeModal(); render();
   let base;
   if(criados===0)      base = "Atividade criada";
   else if(criados===1) base = "Atividade criada para o setor principal + 1 coparticipante";
   else                 base = `Atividade criada para o setor principal + ${criados} coparticipantes`;
+  if(enviadas) base += ` \u00b7 enviada para ${enviadas} ${enviadas===1?"RAS":"RAS diferentes"}`;
   toast(WRITE_ENDPOINT ? base+" no Notion." : base+" (modo teste — só na tela).");
 }
 
