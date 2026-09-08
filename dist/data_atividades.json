@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-09-08T14:55:08",
+  "geradoEm": "2026-09-08T17:12:17",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -28,10 +28,10 @@
       "nome": "AUTOMAÇÕES MANUAIS",
       "setor": "José Arthur",
       "responsavel": "José Arthur",
-      "prioridade": "Média",
+      "prioridade": "Alta",
       "status": "Continuidade da Semana Anterior",
       "semana": "2026-09-07",
-      "obs": "SEXTA 04/09",
+      "obs": "SEXTA 11/09",
       "origem": ""
     },
     {
@@ -50,7 +50,7 @@
       "nome": "TB 19 QD 50 LT 07",
       "setor": "José Arthur",
       "responsavel": "José Arthur",
-      "prioridade": "Média",
+      "prioridade": "Alta",
       "status": "Continuidade da Semana Anterior",
       "semana": "2026-09-07",
       "obs": "",
