@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-09-21T03:33:58",
+  "geradoEm": "2026-09-21T07:35:16",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -19,7 +19,7 @@
       "responsavel": "Felipe",
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-09-14",
+      "semana": "2026-09-21",
       "obs": "",
       "origem": ""
     },
@@ -30,7 +30,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-09-14",
+      "semana": "2026-09-21",
       "obs": "SEXTA 11/09",
       "origem": ""
     },
@@ -52,7 +52,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Alta",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-09-14",
+      "semana": "2026-09-21",
       "obs": "",
       "origem": ""
     },
@@ -63,7 +63,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Alta",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-09-14",
+      "semana": "2026-09-21",
       "obs": "",
       "origem": ""
     },
@@ -74,7 +74,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Alta",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-09-14",
+      "semana": "2026-09-21",
       "obs": "",
       "origem": ""
     },
@@ -96,7 +96,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Alta",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-09-14",
+      "semana": "2026-09-21",
       "obs": "Ainda não temos o mapa do condominio das esmerladas.",
       "origem": ""
     },
@@ -228,7 +228,7 @@
       "responsavel": "Felipe",
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-09-14",
+      "semana": "2026-09-21",
       "obs": "",
       "origem": ""
     }
