@@ -287,6 +287,7 @@ main.wrap{padding:40px 22px 60px}
 
 <div class="toast" id="toast"></div>
 
+<script src="ras-offline.js"></script>
 <script>
 /* ====== CONFIGURAÇÃO ======
    Cole aqui a URL do endpoint de escrita (Google Apps Script) DESTE projeto.
@@ -447,6 +448,10 @@ async function boot(){
     setores = a.setorOptions || [];
     window._geradoEm = a.geradoEm || "";
   }catch(e){ ATIV = SEED_ATIV.slice(); }
+  /* OFFLINE (21/09/2026): reaplica por cima dos dados o que foi preenchido
+     neste aparelho e ainda não está no arquivo publicado (fila ou recém-
+     enviado). Sem isto, recarregar sem internet "apagava" o preenchido. */
+  ATIV = RasOffline.aplicar({ativ:ATIV, geradoEm:window._geradoEm}).ativ;
 
   // Setores = opções do Notion (na ordem definida lá). Sem elas, cai no
   // fallback. Em ambos os casos, junta qualquer setor que apareça nos dados
@@ -658,18 +663,19 @@ function renderFoot(){
 
 function changeField(id, field, value){
   const a = ATIV.find(x=>x.id===id); if(!a) return;
+  /* OFFLINE (21/09/2026) — atividade criada neste aparelho ("local-..."):
+     enquanto a criação ainda está na fila, a edição entra NELA (a atividade
+     já nasce certa no Notion). Se a criação já foi enviada, ainda não existe
+     ID do Notion para editar — avisa em vez de fingir que salvou. */
+  const local = String(id).startsWith("local-");
+  if(local && RasOffline.estado(id)==="enviado"){
+    toast("Esta atividade acabou de ir para o Notion — dá para editar depois da próxima atualização do site (até 15 min).");
+    render(); return;
+  }
   a[field] = value;
   if(field==="semana") recomputarSeletorSemanas();
   render();
-  if(String(id).startsWith("local-")){
-    // Ainda não sincronizou com o Notion (criada nesta sessão, antes do
-    // próximo fetch_ras.py) — não existe página real pra editar lá ainda.
-    // A mudança fica só na tela; assim que a sincronização acontecer (até
-    // 15 min) e a página recarregar, o ID real assume e a edição volta a
-    // salvar normalmente. Mesma lógica já aplicada em excluirAtividade.
-    toast("Alteração salva só na tela — a atividade ainda não sincronizou com o Notion (até 15 min).");
-    return;
-  }
+  if(local){ RasOffline.editarCriacao(id, field, value); return; }
   if(WRITE_ENDPOINT){ post({action:"update", id, field, value}); }
 }
 
@@ -692,13 +698,18 @@ function editarNome(id, el){
 
 function excluirAtividade(id){
   const a = ATIV.find(x=>x.id===id); if(!a) return;
+  const local = String(id).startsWith("local-");
+  if(local && RasOffline.estado(id)==="enviado"){
+    toast("Esta atividade acabou de ir para o Notion — dá para excluir depois da próxima atualização do site (até 15 min).");
+    return;
+  }
   if(!confirm(`Excluir a atividade "${a.nome}"?\n\nEla vai para a lixeira do Notion (dá pra recuperar por lá se for engano).`)) return;
   ATIV = ATIV.filter(x=>x.id!==id);
   recomputarSeletorSemanas(); render();
-  if(String(id).startsWith("local-")){
-    // Ainda não sincronizou com o Notion (criada nesta sessão, antes do
-    // próximo fetch_ras.py) — não existe página real pra excluir lá.
-    toast("Removida da tela. Ainda não tinha sincronizado com o Notion.");
+  if(local){
+    // Criada neste aparelho e ainda na fila: tira da fila, nem chega ao Notion.
+    RasOffline.cancelarCriacao(id);
+    toast("Removida. Ela ainda não tinha sido enviada ao Notion.");
     return;
   }
   if(WRITE_ENDPOINT){ post({action:"delete", id}); toast("Atividade excluída."); }
@@ -827,9 +838,12 @@ function renderDestinosOR(){
 
 function criarEntrada(nome, setor, resp, prioridade, status, semana, obs, origem){
   const dados = {action:"create", atividade:nome, setor, responsavel:resp, prioridade, status, semana, obs, origem: origem||""};
-  ATIV.push({id:"local-"+Date.now()+"-"+Math.random().toString(36).slice(2,6),
-             nome, setor, responsavel:resp, prioridade, status, semana, obs, origem: origem||""});
-  if(WRITE_ENDPOINT){ post(dados); }
+  const item = {id:"local-"+Date.now()+"-"+Math.random().toString(36).slice(2,6),
+                nome, setor, responsavel:resp, prioridade, status, semana, obs, origem: origem||""};
+  ATIV.push(item);
+  // localId + item: se a página recarregar antes do Notion publicar, a
+  // atividade é redesenhada a partir daqui (ver RasOffline.aplicar no boot).
+  if(WRITE_ENDPOINT){ post(dados, {localId:item.id, item}); }
 }
 
 function saveAtividade(){
@@ -892,7 +906,7 @@ function saveAtividade(){
   else if(criados===1) base = "Atividade criada para o setor principal + 1 coparticipante";
   else                 base = `Atividade criada para o setor principal + ${criados} coparticipantes`;
   if(enviadas) base += ` \u00b7 enviada para ${enviadas} ${enviadas===1?"RAS":"RAS diferentes"}`;
-  toast(WRITE_ENDPOINT ? base+" no Notion." : base+" (modo teste — só na tela).");
+  toast(WRITE_ENDPOINT ? base+RasOffline.onde() : base+" (modo teste — só na tela).");
 }
 
 // --- Modal de Observações: ver/editar o texto completo (o preview na tabela
@@ -916,14 +930,13 @@ function salvarObs(){
 }
 function closeModalObs(){ document.getElementById("modalObs").classList.remove("open"); _obsCtx=null; }
 
-function post(dados){
-  // GET com parâmetros na URL — mesmo padrão validado no OBRAS-GERAL.
-  // POST com corpo JSON em modo no-cors não é confiável para Apps Script.
-  const qs = Object.entries(dados)
-    .map(([k,v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v ?? "")}`)
-    .join("&");
-  fetch(`${WRITE_ENDPOINT}?${qs}`, {method:"GET", mode:"no-cors"})
-    .catch(()=>toast("Falha ao enviar ao endpoint."));
+function post(dados, meta){
+  /* OFFLINE (21/09/2026): antes o pedido era mandado UMA vez e, sem internet,
+     morria aqui — por isso o que foi preenchido com a rede fora se perdeu.
+     Agora ele entra na fila do ras-offline.js (guardada no navegador) e é
+     enviado quando der, em ordem, sem duplicar (opId). Mesmo esquema do
+     PORTAL-MORAIS. O envio continua sendo GET no-cors, como antes. */
+  return RasOffline.enviar(dados, meta);
 }
 
 let toastT;
