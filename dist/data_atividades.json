@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-09-24T13:15:57",
+  "geradoEm": "2026-09-24T15:13:06",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -12,6 +12,17 @@
     "José Arthur"
   ],
   "atividades": [
+    {
+      "id": "3e5c5ab5-32d3-813f-a487-eb6955cb6566",
+      "nome": "Mudar guilherme da ras de obra",
+      "setor": "Felipe",
+      "responsavel": "Felipe",
+      "prioridade": "Alta",
+      "status": "A Fazer",
+      "semana": "2026-09-24",
+      "obs": "",
+      "origem": "Enviada de › RAS Obras › João Marcos"
+    },
     {
       "id": "3d5c5ab5-32d3-81fc-abf2-d040fec989de",
       "nome": "Gerar indicador de VSO",
