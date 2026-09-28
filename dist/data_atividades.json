@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-09-28T03:55:54",
+  "geradoEm": "2026-09-28T08:10:34",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -18,8 +18,8 @@
       "setor": "Felipe",
       "responsavel": "Felipe",
       "prioridade": "Alta",
-      "status": "A Fazer",
-      "semana": "2026-09-24",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-09-28",
       "obs": "",
       "origem": "Enviada de › RAS Obras › João Marcos"
     },
@@ -30,7 +30,7 @@
       "responsavel": "Felipe",
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-09-21",
+      "semana": "2026-09-28",
       "obs": "",
       "origem": ""
     },
@@ -41,7 +41,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-09-21",
+      "semana": "2026-09-28",
       "obs": "SEXTA 11/09",
       "origem": ""
     },
@@ -63,7 +63,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Alta",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-09-21",
+      "semana": "2026-09-28",
       "obs": "",
       "origem": ""
     },
@@ -74,7 +74,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Alta",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-09-21",
+      "semana": "2026-09-28",
       "obs": "",
       "origem": ""
     },
@@ -85,7 +85,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Alta",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-09-21",
+      "semana": "2026-09-28",
       "obs": "",
       "origem": ""
     },
@@ -107,7 +107,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Alta",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-09-21",
+      "semana": "2026-09-28",
       "obs": "Ainda não temos o mapa do condominio das esmerladas.\nTERMINANDO O DO TERRABELA FALAR COM MEU REI PARA LIBERAR OS OUTROS MAPAS",
       "origem": ""
     },
@@ -239,7 +239,7 @@
       "responsavel": "Felipe",
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-09-21",
+      "semana": "2026-09-28",
       "obs": "",
       "origem": ""
     }
