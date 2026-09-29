@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-09-29T11:08:33",
+  "geradoEm": "2026-09-29T12:39:01",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -13,12 +13,34 @@
   ],
   "atividades": [
     {
+      "id": "3eac5ab5-32d3-8159-be1e-cc0080f060cb",
+      "nome": "ATUALIZAR AS PENDÊNCIAS DO PORTAL - ABA DOCUMENTOS",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-09-28",
+      "obs": "1 - MATAR AS ATIVIDADES\n2 - MATAR OS ALERTAS",
+      "origem": ""
+    },
+    {
+      "id": "3eac5ab5-32d3-8185-87f5-d25b63bed66b",
+      "nome": "ATUALIZAR AS PENDÊNCIAS DO PORTAL - ABA OBRAS",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-09-28",
+      "obs": "1 - ALERTAS ABA OBRAS\n2 - PREENCHER ÁREA DAS DEMAIS OBRAS",
+      "origem": ""
+    },
+    {
       "id": "3e5c5ab5-32d3-813f-a487-eb6955cb6566",
       "nome": "Mudar guilherme da ras de obra",
       "setor": "Felipe",
       "responsavel": "Felipe",
       "prioridade": "Alta",
-      "status": "Continuidade da Semana Anterior",
+      "status": "Concluído",
       "semana": "2026-09-28",
       "obs": "",
       "origem": "Enviada de › RAS Obras › João Marcos"
@@ -39,7 +61,7 @@
       "nome": "AUTOMAÇÕES MANUAIS",
       "setor": "José Arthur",
       "responsavel": "José Arthur",
-      "prioridade": "Média",
+      "prioridade": "Baixa",
       "status": "Continuidade da Semana Anterior",
       "semana": "2026-09-28",
       "obs": "SEXTA 11/09",
@@ -238,7 +260,7 @@
       "setor": "Felipe",
       "responsavel": "Felipe",
       "prioridade": "Média",
-      "status": "Continuidade da Semana Anterior",
+      "status": "Concluído",
       "semana": "2026-09-28",
       "obs": "",
       "origem": ""
