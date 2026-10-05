@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-10-05T01:38:11",
+  "geradoEm": "2026-10-05T08:15:17",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -18,8 +18,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Média",
-      "status": "A Fazer",
-      "semana": "2026-09-28",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-10-05",
       "obs": "1 - MATAR AS ATIVIDADES\n2 - MATAR OS ALERTAS",
       "origem": ""
     },
@@ -29,8 +29,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Média",
-      "status": "A Fazer",
-      "semana": "2026-09-28",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-10-05",
       "obs": "1 - ALERTAS ABA OBRAS\n2 - PREENCHER ÁREA DAS DEMAIS OBRAS",
       "origem": ""
     },
@@ -52,7 +52,7 @@
       "responsavel": "Felipe",
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-09-28",
+      "semana": "2026-10-05",
       "obs": "",
       "origem": ""
     },
@@ -63,7 +63,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Baixa",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-09-28",
+      "semana": "2026-10-05",
       "obs": "SEXTA 11/09",
       "origem": ""
     },
@@ -129,7 +129,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Alta",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-09-28",
+      "semana": "2026-10-05",
       "obs": "Ainda não temos o mapa do condominio das esmerladas.\nTERMINANDO O DO TERRABELA FALAR COM MEU REI PARA LIBERAR OS OUTROS MAPAS",
       "origem": ""
     },
