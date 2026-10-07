@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-10-07T09:53:09",
+  "geradoEm": "2026-10-07T17:17:30",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -12,6 +12,61 @@
     "José Arthur"
   ],
   "atividades": [
+    {
+      "id": "3f2c5ab5-32d3-815a-895c-e748557d2082",
+      "nome": "TB 19 QD 50 LT 14",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-10-05",
+      "obs": "",
+      "origem": ""
+    },
+    {
+      "id": "3f2c5ab5-32d3-8185-968b-fa0050ec30e1",
+      "nome": "TB 19 QD 50 LT 15",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-10-05",
+      "obs": "",
+      "origem": ""
+    },
+    {
+      "id": "3f2c5ab5-32d3-8117-bcf5-eeb00b7104a4",
+      "nome": "TB 19 QD 50 LT 16",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-10-05",
+      "obs": "PROJETO",
+      "origem": ""
+    },
+    {
+      "id": "3f2c5ab5-32d3-8178-8329-f0552a5c3fe0",
+      "nome": "TERMINAR O MAPA DO FLORENÇA (MAPA DE VENDAS)",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-10-05",
+      "obs": "",
+      "origem": ""
+    },
+    {
+      "id": "3f2c5ab5-32d3-81e7-bb39-fc59727c5434",
+      "nome": "TERMINAR O MAPA DO FLORENÇA (MAPA DE LOTES)",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-10-05",
+      "obs": "",
+      "origem": ""
+    },
     {
       "id": "3eac5ab5-32d3-8159-be1e-cc0080f060cb",
       "nome": "ATUALIZAR AS PENDÊNCIAS DO PORTAL - ABA DOCUMENTOS",
@@ -128,8 +183,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Alta",
-      "status": "Continuidade da Semana Anterior",
-      "semana": "2026-10-05",
+      "status": "Concluído",
+      "semana": "2026-09-28",
       "obs": "Ainda não temos o mapa do condominio das esmerladas.\nTERMINANDO O DO TERRABELA FALAR COM MEU REI PARA LIBERAR OS OUTROS MAPAS",
       "origem": ""
     },
