@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-10-08T17:44:40",
+  "geradoEm": "2026-10-08T20:31:06",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -50,7 +50,7 @@
       "nome": "TERMINAR O MAPA DO FLORENÇA (MAPA DE VENDAS)",
       "setor": "José Arthur",
       "responsavel": "José Arthur",
-      "prioridade": "Média",
+      "prioridade": "Baixa",
       "status": "A Fazer",
       "semana": "2026-10-05",
       "obs": "",
@@ -62,7 +62,7 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Média",
-      "status": "A Fazer",
+      "status": "Concluído",
       "semana": "2026-10-05",
       "obs": "",
       "origem": ""
