@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-10-12T01:01:51",
+  "geradoEm": "2026-10-12T08:32:57",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -18,8 +18,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Média",
-      "status": "A Fazer",
-      "semana": "2026-10-05",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-10-12",
       "obs": "",
       "origem": ""
     },
@@ -29,8 +29,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Média",
-      "status": "A Fazer",
-      "semana": "2026-10-05",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-10-12",
       "obs": "",
       "origem": ""
     },
@@ -40,8 +40,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Média",
-      "status": "A Fazer",
-      "semana": "2026-10-05",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-10-12",
       "obs": "PROJETO",
       "origem": ""
     },
@@ -51,8 +51,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Baixa",
-      "status": "A Fazer",
-      "semana": "2026-10-05",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-10-12",
       "obs": "",
       "origem": ""
     },
@@ -74,7 +74,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-10-05",
+      "semana": "2026-10-12",
       "obs": "1 - MATAR AS ATIVIDADES\n2 - MATAR OS ALERTAS",
       "origem": ""
     },
@@ -85,7 +85,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-10-05",
+      "semana": "2026-10-12",
       "obs": "1 - ALERTAS ABA OBRAS\n2 - PREENCHER ÁREA DAS DEMAIS OBRAS",
       "origem": ""
     },
@@ -107,7 +107,7 @@
       "responsavel": "Felipe",
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-10-05",
+      "semana": "2026-10-12",
       "obs": "",
       "origem": ""
     },
@@ -118,7 +118,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Baixa",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-10-05",
+      "semana": "2026-10-12",
       "obs": "SEXTA 11/09",
       "origem": ""
     },
