@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-10-16T10:48:04",
+  "geradoEm": "2026-10-16T15:03:52",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -84,7 +84,7 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Média",
-      "status": "Continuidade da Semana Anterior",
+      "status": "Concluído",
       "semana": "2026-10-12",
       "obs": "1 - ALERTAS ABA OBRAS\n2 - PREENCHER ÁREA DAS DEMAIS OBRAS",
       "origem": ""
