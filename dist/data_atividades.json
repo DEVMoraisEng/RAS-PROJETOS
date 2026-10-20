@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-10-20T16:59:51",
+  "geradoEm": "2026-10-20T17:19:26",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -12,6 +12,17 @@
     "José Arthur"
   ],
   "atividades": [
+    {
+      "id": "3ffc5ab5-32d3-81f0-8349-c2e5db4619e8",
+      "nome": "FAZER PLANTAR HUMANIZADAS E ATUALIZAR NO DRIVE",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Alta",
+      "status": "A Fazer",
+      "semana": "2026-10-19",
+      "obs": "",
+      "origem": ""
+    },
     {
       "id": "3ffc5ab5-32d3-8183-8f0f-fe96946a470c",
       "nome": "MAPA DO PORTAL DO ORIENTE",
@@ -28,7 +39,7 @@
       "nome": "DETALHAMENTO P/ APROVAÇÃO E DEMAIS PROJETOS PR 06 QD 07 LT 29",
       "setor": "José Arthur",
       "responsavel": "José Arthur",
-      "prioridade": "Média",
+      "prioridade": "Alta",
       "status": "A Fazer",
       "semana": "2026-10-19",
       "obs": "",
