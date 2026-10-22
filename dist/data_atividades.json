@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-10-22T18:19:22",
+  "geradoEm": "2026-10-22T20:56:03",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -12,6 +12,17 @@
     "José Arthur"
   ],
   "atividades": [
+    {
+      "id": "401c5ab5-32d3-81b4-83f8-e405c2d011eb",
+      "nome": "Colocar o cronograma de obras no portal e atrelar às medições semanais",
+      "setor": "Felipe",
+      "responsavel": "Felipe",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-11-05",
+      "obs": "",
+      "origem": "Enviada de › RAS Obras › Guilherme"
+    },
     {
       "id": "3ffc5ab5-32d3-81f0-8349-c2e5db4619e8",
       "nome": "FAZER PLANTAR HUMANIZADAS E ATUALIZAR NO DRIVE",
