@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-10-23T13:06:02",
+  "geradoEm": "2026-10-23T14:06:59",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -117,7 +117,7 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Média",
-      "status": "Em Andamento",
+      "status": "Concluído",
       "semana": "2026-10-19",
       "obs": "1 - MATAR AS ATIVIDADES\n2 - MATAR OS ALERTAS",
       "origem": ""
