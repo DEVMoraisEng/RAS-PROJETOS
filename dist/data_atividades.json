@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-10-26T03:27:14",
+  "geradoEm": "2026-10-26T07:22:59",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -40,8 +40,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Média",
-      "status": "A Fazer",
-      "semana": "2026-10-19",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-10-26",
       "obs": "",
       "origem": ""
     },
@@ -51,8 +51,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Alta",
-      "status": "A Fazer",
-      "semana": "2026-10-19",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-10-26",
       "obs": "",
       "origem": ""
     },
@@ -151,7 +151,7 @@
       "responsavel": "Felipe",
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-10-19",
+      "semana": "2026-10-26",
       "obs": "",
       "origem": ""
     },
@@ -162,7 +162,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Baixa",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-10-19",
+      "semana": "2026-10-26",
       "obs": "SEXTA 11/09",
       "origem": ""
     },
