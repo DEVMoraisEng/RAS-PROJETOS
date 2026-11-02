@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-11-02T07:16:47",
+  "geradoEm": "2026-11-02T08:49:38",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -41,7 +41,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-10-26",
+      "semana": "2026-11-02",
       "obs": "",
       "origem": ""
     },
@@ -52,7 +52,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Alta",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-10-26",
+      "semana": "2026-11-02",
       "obs": "",
       "origem": ""
     },
@@ -151,7 +151,7 @@
       "responsavel": "Felipe",
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-10-26",
+      "semana": "2026-11-02",
       "obs": "",
       "origem": ""
     },
@@ -162,7 +162,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Baixa",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-10-26",
+      "semana": "2026-11-02",
       "obs": "SEXTA 11/09",
       "origem": ""
     },
