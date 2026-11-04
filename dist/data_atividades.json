@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-11-04T16:52:24",
+  "geradoEm": "2026-11-04T17:31:43",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -12,6 +12,28 @@
     "José Arthur"
   ],
   "atividades": [
+    {
+      "id": "40ec5ab5-32d3-81ba-9394-dc19dce5d4bf",
+      "nome": "FAZER OS MANUAIS",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-11-02",
+      "obs": "4º",
+      "origem": ""
+    },
+    {
+      "id": "40ec5ab5-32d3-8146-8734-ff3f9e225994",
+      "nome": "FINALIZAR OS PROJETOS DO PETROPÓLIS",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Alta",
+      "status": "A Fazer",
+      "semana": "2026-11-02",
+      "obs": "",
+      "origem": ""
+    },
     {
       "id": "401c5ab5-32d3-81b4-83f8-e405c2d011eb",
       "nome": "Colocar o cronograma de obras no portal e atrelar às medições semanais",
@@ -36,13 +58,13 @@
     },
     {
       "id": "3ffc5ab5-32d3-8183-8f0f-fe96946a470c",
-      "nome": "MAPA DO PORTAL DO ORIENTE",
+      "nome": "MAPA DO PORTAL DO ORIENTE/PETROPÓLIS",
       "setor": "José Arthur",
       "responsavel": "José Arthur",
-      "prioridade": "Média",
+      "prioridade": "Alta",
       "status": "Continuidade da Semana Anterior",
       "semana": "2026-11-02",
-      "obs": "",
+      "obs": "3º",
       "origem": ""
     },
     {
@@ -53,7 +75,7 @@
       "prioridade": "Alta",
       "status": "Continuidade da Semana Anterior",
       "semana": "2026-11-02",
-      "obs": "",
+      "obs": "1º",
       "origem": ""
     },
     {
