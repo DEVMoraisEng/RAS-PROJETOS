@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-11-09T01:27:14",
+  "geradoEm": "2026-11-09T09:01:56",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -18,8 +18,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Média",
-      "status": "A Fazer",
-      "semana": "2026-11-02",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-11-09",
       "obs": "4º",
       "origem": ""
     },
@@ -29,8 +29,8 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Alta",
-      "status": "A Fazer",
-      "semana": "2026-11-02",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-11-09",
       "obs": "",
       "origem": ""
     },
@@ -40,8 +40,8 @@
       "setor": "Felipe",
       "responsavel": "Felipe",
       "prioridade": "Média",
-      "status": "A Fazer",
-      "semana": "2026-11-05",
+      "status": "Continuidade da Semana Anterior",
+      "semana": "2026-11-09",
       "obs": "",
       "origem": "Enviada de › RAS Obras › Guilherme"
     },
@@ -63,7 +63,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Alta",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-11-02",
+      "semana": "2026-11-09",
       "obs": "3º",
       "origem": ""
     },
@@ -173,7 +173,7 @@
       "responsavel": "Felipe",
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-11-02",
+      "semana": "2026-11-09",
       "obs": "",
       "origem": ""
     },
@@ -184,7 +184,7 @@
       "responsavel": "José Arthur",
       "prioridade": "Baixa",
       "status": "Continuidade da Semana Anterior",
-      "semana": "2026-11-02",
+      "semana": "2026-11-09",
       "obs": "SEXTA 11/09",
       "origem": ""
     },
