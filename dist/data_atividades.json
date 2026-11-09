@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-11-09T09:12:37",
+  "geradoEm": "2026-11-09T19:09:33",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -29,7 +29,7 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Alta",
-      "status": "Continuidade da Semana Anterior",
+      "status": "Concluído",
       "semana": "2026-11-09",
       "obs": "",
       "origem": ""
@@ -62,7 +62,7 @@
       "setor": "José Arthur",
       "responsavel": "José Arthur",
       "prioridade": "Alta",
-      "status": "Continuidade da Semana Anterior",
+      "status": "Concluído",
       "semana": "2026-11-09",
       "obs": "3º",
       "origem": ""
