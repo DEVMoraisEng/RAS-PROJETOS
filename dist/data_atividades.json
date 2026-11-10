@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-11-10T12:09:51",
+  "geradoEm": "2026-11-10T12:49:29",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -13,6 +13,28 @@
   ],
   "atividades": [
     {
+      "id": "414c5ab5-32d3-811e-ae64-eff6139cc770",
+      "nome": "FL 27 QD 38 LT 23\nFL 27 QD 37 LT 09",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-11-09",
+      "obs": "",
+      "origem": ""
+    },
+    {
+      "id": "414c5ab5-32d3-8148-a98e-dc08aeb167c3",
+      "nome": "FL 27 QD 38 LT 22",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-11-09",
+      "obs": "Fazer o detalhamento",
+      "origem": ""
+    },
+    {
       "id": "40ec5ab5-32d3-81ba-9394-dc19dce5d4bf",
       "nome": "FAZER OS MANUAIS",
       "setor": "José Arthur",
@@ -20,7 +42,7 @@
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
       "semana": "2026-11-09",
-      "obs": "4º",
+      "obs": "1 º",
       "origem": ""
     },
     {
@@ -64,7 +86,7 @@
       "prioridade": "Alta",
       "status": "Concluído",
       "semana": "2026-11-09",
-      "obs": "3º",
+      "obs": "",
       "origem": ""
     },
     {
