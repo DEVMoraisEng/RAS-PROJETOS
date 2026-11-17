@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-11-17T06:47:16",
+  "geradoEm": "2026-11-17T16:42:07",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -13,6 +13,50 @@
   ],
   "atividades": [
     {
+      "id": "41bc5ab5-32d3-81cb-a9e2-d42082c6dc14",
+      "nome": "PREENCHER ÁREAS DOS LOTES NA ABA DE OBRAS",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-11-16",
+      "obs": "4º",
+      "origem": ""
+    },
+    {
+      "id": "41bc5ab5-32d3-81e7-9b5a-d5cdd5ad9605",
+      "nome": "PUBLICAR PROJETOS PORTAL DO ORIENTE",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-11-16",
+      "obs": "",
+      "origem": ""
+    },
+    {
+      "id": "41bc5ab5-32d3-81ca-9a12-d8fc20f64706",
+      "nome": "Detalhar o projeto Maceio lote C",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-11-16",
+      "obs": "",
+      "origem": ""
+    },
+    {
+      "id": "41bc5ab5-32d3-818a-bf8a-e21b830c2fd8",
+      "nome": "Revisar os projetos do Petropílis",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-11-16",
+      "obs": "",
+      "origem": ""
+    },
+    {
       "id": "414c5ab5-32d3-811e-ae64-eff6139cc770",
       "nome": "FL 27 QD 38 LT 23\nFL 27 QD 37 LT 09",
       "setor": "José Arthur",
@@ -20,7 +64,7 @@
       "prioridade": "Média",
       "status": "Continuidade da Semana Anterior",
       "semana": "2026-11-16",
-      "obs": "",
+      "obs": "ANEXAR OS PROJETOS 1º",
       "origem": ""
     },
     {
