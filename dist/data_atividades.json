@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-11-24T08:38:16",
+  "geradoEm": "2026-11-24T15:42:47",
   "statusOptions": [
     "Continuidade da Semana Anterior",
     "A Fazer",
@@ -12,6 +12,50 @@
     "José Arthur"
   ],
   "atividades": [
+    {
+      "id": "422c5ab5-32d3-81d4-8989-f5b92f30ed32",
+      "nome": "Fazer o detalhamento do Petropolis LOTE C",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-11-23",
+      "obs": "",
+      "origem": ""
+    },
+    {
+      "id": "422c5ab5-32d3-8154-815a-d889568915e7",
+      "nome": "finalizar as correções do petropolis",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-11-23",
+      "obs": "",
+      "origem": ""
+    },
+    {
+      "id": "422c5ab5-32d3-8124-ae72-fd3e1dedb82e",
+      "nome": "Deixar pronto os demais projetos do florença.",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-11-23",
+      "obs": "Não é pra emitir art nem anexar os projetos.",
+      "origem": ""
+    },
+    {
+      "id": "422c5ab5-32d3-81df-8362-f4b27113ceef",
+      "nome": "conferir detalhamento FL 27 LT 09  e depois duplicar para os LTs 22 e 23.",
+      "setor": "José Arthur",
+      "responsavel": "José Arthur",
+      "prioridade": "Média",
+      "status": "A Fazer",
+      "semana": "2026-11-23",
+      "obs": "Remover e anexar.\nestrutural não é pra duplicar (feito individualmente pelo felipe)",
+      "origem": ""
+    },
     {
       "id": "41bc5ab5-32d3-81cb-a9e2-d42082c6dc14",
       "nome": "PREENCHER ÁREAS DOS LOTES NA ABA DE OBRAS",
